@@ -1,0 +1,1340 @@
+ 
+/*========== Css For David ==========*/
+
+/*========== TABLE OF CONTENTS ============
+1. Import CSS
+2. Typography Settings
+3. Basic CSS
+4. Font-face
+5. Header Section
+6. About Section
+7. Capabilitie Section
+8. Experience Section
+9. Portfolio Section
+10. Testimonial Section
+
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text:400,400i|Montserrat:300,400,400i,500,600,700&display=swap');
+
+body {
+    color: #2f3171;
+    font-weight: 400;
+    background: #fcfdff;
+    font-size: 16px;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0px;
+    font-style: normal;
+    color: #2f3171;
+    line-height: 1.3;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #2f3171;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+h4 {
+  font-size: 25px;
+}
+h5 {
+  font-size: 20px
+}
+h6 {
+  font-size: 16px;
+}
+
+
+/* ======================================= 
+    Basic CSS Start
+   ======================================= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a:focus {
+  outline: 0 solid;
+}
+a, a:hover {
+  text-decoration: none;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+input:focus, button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+::-moz-selection {
+  background: #575ff5;
+  color: #fff;
+}
+::selection {
+  background: #575ff5;
+  color: #fff;
+}
+.slicknav_menu {
+  display: none;
+}
+.section-padding {
+  padding: 150px 0;
+}
+.header-bottom-space {
+    height: 285px;
+}
+.header-bottom-space-two{
+  height: 450px;
+}
+
+
+.sec-title {
+    margin-bottom: 30px;
+}
+.sec-title h2 {
+  font-size: 47px;
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+}
+
+.sec-title h6 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #5c54f0;
+}
+
+.btn-bg {
+    color: #fff;
+    background-color: #15ce73;
+    font-weight: 700;
+    border-radius: 4px;
+    text-align: center;
+    padding: 13px 15px;
+    min-width: 200px;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+}
+.btn-bg:hover {
+  color: #fff;
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 30px 0px rgba(87, 95, 245, .15);
+}
+
+/* ======================================= 
+    Basic CSS End
+   ======================================= */
+
+
+
+/* ======================================= 
+    Header Section CSS Start
+   ======================================= */
+.logo a {
+    display: inline-block;
+}
+.fixed-menu .logo a {
+    margin-top: 10px;
+}
+.header_area {
+  position: relative;
+}
+.for_header_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header_top_area {
+  padding: 55px 60px;
+  position: fixed;
+  transition: 0.65s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.fixed-menu {
+  background: #fcfdff;
+  padding: 15px 60px;
+  box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10);
+}
+.for_middle {
+  display: flex;
+}
+.menu_area {
+  width: 100%;
+}
+.menu_area ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.menu_area ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 15px 6px;
+}
+.menu_area ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 13px;
+  border-radius: 3px;
+  position: relative;
+}
+.menu_area ul li ul {
+    visibility: hidden;
+    position: absolute;
+    background: #FCFDFF;
+    text-align: left;
+    width: 230px;
+    opacity: 0;
+    top: 75px;
+    padding: 10px 0;
+    left: 0;
+    box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10);
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+}
+.menu_area ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 82px;
+}
+.menu_area ul li ul li {
+  padding: 0;
+  display: block;
+}
+.menu_area ul li ul li a {
+    color: #2f3171;
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 25px;
+}
+.menu_area ul li ul li a:hover {
+    color: #5c54f0;
+}
+.menu_area ul li ul li a:before, .menu_area ul li ul li a:after, .fixed-menu ul li.active ul li a:before, .fixed-menu  ul li.active ul li a:after  {
+  height: 0;
+}
+.fixed-menu .menu_area ul li a {
+  color: #5c54f0;
+}
+.fixed-menu .menu_area ul li ul a {
+  color: #868692;
+}
+.menu_area ul li a:before, .menu_area ul li.active a:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 44%;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    border-radius: 10px;
+    transform: translate(-50%);
+    transition: all ease .4s;
+}
+.fixed-menu ul li a:before, .fixed-menu ul li.active a:before {
+  background: #5c54f0;
+}
+.menu_area ul li a:hover:before, .menu_area ul li.active a:before {
+  width: 29%;
+}
+.menu_area ul li a:after, .menu_area ul li.active a:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 35%;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    border-radius: 10px;
+    transform: translate(50%);
+    transition: all ease .4s;
+}
+.fixed-menu  ul li a:after, .fixed-menu  ul li.active a:after {
+  background: #5c54f0;
+}
+.menu_area ul li a:hover:after, .menu_area ul li.active a:after {
+  width: 7%;
+}
+.hire_link {
+  background: #fff;
+  color: #575ff5 !important;
+  font-weight: 700 !important;
+  padding: 17px 30px !important;
+  border-radius: 4px !important;
+}
+.fixed-menu .hire_link {
+  background: #575ff5;
+  color: #fff !important;
+}
+
+
+/* hero-section */
+
+.hero-section {
+    padding: 225px 0 150px;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero-content h1 {
+    font-family: 'DM Serif Text', serif;
+    color: #2f3171;
+    font-size: 95px;
+    margin: 5px 0 15px;
+    font-weight: 400;
+    line-height: 100px;
+}
+.hero-content h2 {
+    color: #2f3171;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.hero-content h3 {
+    color: #2f3171;
+    font-weight: 300;
+}
+.hero-content p {
+    margin-bottom: 55px;
+    color: #3a4175;
+}
+
+
+/* ======================================= 
+    Header Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    About Section CSS Start
+   ======================================= */
+.about-section {
+    position: relative;
+    padding: 150px 0 150px;
+}
+.about-image-wrap {
+    text-align: center;
+}
+.for_left_shap {
+  position: absolute;
+  width: 36%;
+  left: 0;
+  top: 0;
+}
+
+
+/* ======================================= 
+    About Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Capabilitie Section CSS Start
+   ======================================= */
+.capabilitie_area {
+    position: relative;
+    padding: 145px 0 120px;
+}
+.for_right_shap {
+  position: absolute;
+  width: 36%;
+  right: 0;
+  top: 0;
+}
+.section_title {
+  margin-bottom: 40px;
+  color: #2f3171;
+  font-size: 60px;
+}
+.capabilitie_area .col-lg-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.single_capabilitie {
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.capabilitie-inner {
+  height: 100px;
+  position: relative;
+  margin: auto;
+  margin: 0 10px;
+}
+.skillbar-title {
+    padding: 15px 5px 0;
+    color: #2f3171;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.skillbar {
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+.skill-bar-percent {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2f3171;
+  padding-left: 3px;
+}
+.skill-bar-wrap {
+    height: 1px;
+    position: absolute;
+    background: #6367EB;
+    width: 100%;
+    left: 0px;
+    bottom: -8px;
+    border-radius: 4px;
+}
+.skillbar-bar {
+    height: 3px;
+    width: 0px;
+    background: #15ce73;
+    margin-top: -1px;
+    color: green;
+}
+
+/* ======================================= 
+    Capabilitie Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Experience Section CSS Start
+   ======================================= */
+.experience_sectoin {
+    position: relative;
+    padding: 150px 0 130px;
+}
+.btn-link:focus, .btn-link.focus, .btn-link:hover {
+  text-decoration: none;
+}
+.accordion .card {
+  margin-bottom: 20px;
+}
+.card .card-header {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.card .card-header button.btn.btn-link.collapsed, .card .card-header button.btn.btn-link {
+  color: #fff;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  padding: 18px 35px;
+  background: #5c54f0;
+  position: relative;
+}
+.card .card-header button.btn.btn-link {
+  background: #15ce73;
+}
+.accordion .card:not(:first-of-type):not(:last-of-type), .accordion .card:first-of-type, .accordion .card:last-of-type {
+  border: none;
+}
+.card .card-body {
+    background: #fcfdff;
+    padding: 20px 20px 10px 20px;
+}
+.card .card-body p {
+    margin-bottom: 0;
+}
+.card .card-body span {
+  color: #2f3171;
+  font-weight: 500;
+}
+.card-header button.btn.btn-link.collapsed i, .card-header button.btn.btn-link i {
+  position: absolute;
+  right: 25px;
+  top: 24px;
+  font-size: 12px;
+  transform: rotate(90deg);
+  transition: all ease 0.6s;
+}
+.card-header button.btn.btn-link i {
+  transform: rotate(-90deg);
+  transition: all ease 0.4s;
+}
+/* ======================================= 
+    Experience Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Portfolio Section CSS Start
+   ======================================= */
+.portfolio_section {
+    position: relative;
+    padding: 145px 0 120px;
+}
+.portfolio_content {
+  margin: 0 0 40px;
+}
+.portfolio_content p a {
+    color: #15ce73;
+    font-weight: 500;
+}
+.single-portfolio {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.single-portfolio img {
+  border-radius: 5px;
+}
+.portfolio_hover_content {
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    padding: 34px 46px 17px 20px;
+    background: #5c54f0;
+    border-radius: 0px 0px 0px 5px;
+    transition: all ease .5s;
+}
+.single-portfolio:hover .portfolio_hover_content {
+  opacity: 1;
+}
+.portfolio_hover_content span {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ======================================= 
+    Portfolio Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Testimonial Section CSS Start
+   ======================================= */
+.testimonial_section {
+    position: relative;
+    padding: 145px 0 100px;
+}
+.testimonial_content {
+  margin-bottom: 80px;
+}
+.single_testimonial .testimonial_img {
+  width: 30%;
+  float: left;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+.single_testimonial .author_comment {
+  width: 70%;
+  float: left;
+  padding: 0 30px;
+}
+.author_comment h4 {
+  color: #5c54f0;
+  margin-bottom: 15px;
+}
+.author_comment p {
+    font-weight: 400;
+    margin-bottom: 35px;
+    margin-top: 6px;
+    position: relative;
+}
+.author_comment h6 {
+  color: #6e7b95;
+  font-weight: 400;
+}
+.author_comment p i.fa.fa-quote-left {
+  color: #5c54f0;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: 18px;
+}
+.author_comment p i.fa.fa-quote-right {
+  color: #5c54f0;
+  position: absolute;
+  bottom: 12px;
+  font-size: 18px;
+}
+.slick-slider .slick-arrow {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  background: #5c54f0;
+  font-size: 17px;
+  border-radius: 50%;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+    left: 33%;
+    bottom: -19%;
+  z-index: 1;
+  transition: all ease 0.4s;
+  -webkit-transition: all ease 0.4s;
+}
+.slick-slider i.fa.fa-angle-right.slick-arrow {
+  left: 38%;
+  background: #15ce73;
+}
+.slick-slider .slick-arrow:hover {
+  background: #15ce73;
+}
+/* ======================================= 
+    Testimonial Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Client Section CSS Start
+   ======================================= */
+.client_section {
+    padding: 10px 0 50px;
+}
+/* ======================================= 
+    Client Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Contact Section CSS Start
+   ======================================= */
+.contact_section {
+  padding: 80px 0 0;
+}
+.contact_left h3 {
+  color: #2f3171;
+}
+.contact_btn {
+  color: #fff;
+  background-color: #15ce73;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 15px 30px;
+  display: inline-block;
+}
+.contact_inner {
+  padding: 40px 50px;
+  margin: 0 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, .10);
+}
+.contact_left h4 {
+    margin-bottom: 15px;
+}
+.contact_left p {
+    color: #6e7b95;
+    margin-bottom: 0;
+}
+
+.contact_form input:focus, .contact_form button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.contact_form input:focus {
+  border-color: #5c54f0;
+}
+.contact_form input {
+  float: left;
+  width: 65%;
+  height: 56px;
+  padding-left: 20px;
+  border-color: #b0b1c5;
+}
+.contact_form input[type="email"]::-webkit-input-placeholder {
+  color: #2f3171;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact_form input[type="email"]::-moz-placeholder {
+  color: #2f3171;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact_form input[type="email"]:-ms-input-placeholder {
+  color: #2f3171;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact_form input[type="email"]:-moz-placeholder {
+  color: #2f3171;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact_form input[type="email"]::placeholder {
+  color: #2f3171;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact_form button {
+  float: right;
+  width: 30%;
+}
+
+/* ======================================= 
+    Contact Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Footer Section CSS Start
+   ======================================= */
+.footer_section {
+  color: #fff;
+  padding: 315px 0 120px;
+  position: relative;
+}
+.footer_section .footer_inner {
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+  min-height: 385px;
+}
+.for_footer_background {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 94%;
+}
+.footer_title {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 15px;
+    font-family: 'DM Serif Text', serif;
+}
+.footer_left_site {
+  margin: 0px 50px 0 0;
+}
+.footer_left_site p {
+  color: #fff;
+  margin-bottom: 70px;
+}
+.footer_right_site {
+  margin: 15px 0 0px;
+}
+.footer_right_site p {
+  color: #fff;
+}
+.footer_right_site p a {
+  color: #fff;
+}
+.footer_right_site p:last-of-type {
+  margin-bottom: 40px;
+}
+.write_us_btn {
+    color: #fff;
+    background-color: #15ce73;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 15px;
+    display: inline-block;
+    min-width: 180px;
+}
+.write_us_btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Write Us Form CSS */
+.write_us_form {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: all ease .6s;
+}
+.write_us_form.active_form {
+  transform: translateY(-20px);
+}
+.write_us_form form {
+  width: 520px;
+  margin: 0 auto;
+}
+.write_us_form .form_close {
+  float: right;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: inherit;
+  transform: translate(-2px, -45%);
+}
+.write_us_form input {
+  width: 100%;
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+  background: inherit;
+  border-bottom: 1px solid #fff;
+  padding-left: 18px;
+  padding-bottom: 20px;
+}
+.write_us_form input::-webkit-input-placeholder, .write_us_form textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form input::-moz-placeholder, .write_us_form textarea::-moz-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form input:-ms-input-placeholder, .write_us_form textarea:-ms-input-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form input:-moz-placeholder, .write_us_form textarea:-moz-placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form input::placeholder, .write_us_form textarea::placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.write_us_form textarea {
+  resize: none;
+  width: 100%;
+  color: #fff;
+  border: none;
+  background: inherit;
+  margin-bottom: 30px;
+  padding-left: 18px;
+  border-bottom: 1px solid #fff;
+}
+.write_us_form textarea:focus {
+  outline: none;
+}
+.write_us_send_btn {
+  color: #fff;
+  background-color: #15ce73;
+  font-weight: 700;
+  margin-left: 13px;
+  border-radius: 4px;
+  padding: 15px 68px;
+  display: inline-block;
+}
+.write_us_send_btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+/* ======================================= 
+    Footer Section CSS End
+   ======================================= */
+
+
+/* ======================================= 
+    Blog section CSS Start
+   ======================================= */
+.blog-section {
+    padding-top: 100px;
+}
+
+
+/* ======================================= 
+    Blog section CSS end
+   ======================================= */
+
+
+
+
+
+/* ======================================= 
+    Blog Page CSS Start
+   ======================================= */
+.blog_page_section {
+    padding-bottom: 25px;
+}
+.blog_header {
+    padding: 10px 0 75px;
+    font-weight: 400;
+}
+.blog_header h2 {
+  color: #2f3171;
+  font-size: 47px;
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.blog_content_inner {}
+.single_blog {
+  position: relative;
+  padding-bottom: 115px;
+}
+.single_blog_content {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    background: #fff;
+    padding: 32px 25px 15px;
+    margin: 0 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.08);
+}
+.single_blog_content h6 {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.single_blog_content .blog-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.single_blog_content .blog-title a:hover {
+  color: #2f3171;
+} 
+.single-blog-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.single-blog-bottom a {
+    color: #2f3171;
+    font-weight: 600;
+    font-size: 16px;
+}
+.single-blog-bottom .date {
+    font-weight: 500;
+    font-size: 16px;
+}
+.single-blog-bottom a:hover {
+  color: #15ce73;
+}
+
+/* blog pagination */
+
+
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 7px 15px;
+    margin: 0px 3px;
+    line-height: 1.25;
+    color: #272372;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px;
+}
+.page-item.active .page-link,
+.page-link:hover {
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    background-color: #272372;
+}
+
+
+/* ======================================= 
+    Blog Page CSS End
+   ======================================= */
+
+/*** ========================================================================================================
+  start blog details Page
+==========================================================================================================***/
+
+.single-blog-post-inner {
+    padding: 40px 65px 40px 65px;
+    margin-bottom: 40px;
+}
+
+.single-blog-post-inner h3 {
+    margin: 30px 0;
+}
+
+
+/*--start post-admin--*/
+.post-admin {
+    padding: 20px 0px 10px;
+    overflow: hidden;
+}
+.post-admin-img {
+    float: left;
+    margin-right: 20px;
+}
+.admin-by {
+    float: left;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+.post-admin a {
+    color: #2f3171;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.single-blog-post-date {
+    float: left;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.single-blog-post-date a {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/*--end post-admin--*/
+.post-content {
+    margin-bottom: 50px;
+}
+.post-content p {
+    margin-bottom: 30px;
+}
+.post-content h4 {
+    margin-bottom: 30px;
+}
+.blog-inner-img {
+    margin: 50px 0 70px;
+}
+
+/*--start blog post Tags + share--*/
+.blog-post-tag h5 {
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.blog-post-tag a {
+    color: #2f3171;
+    display: inline-block;
+    padding: 4px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .3s;
+    font-weight: 400;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #b0b1c5;
+}
+
+.blog-post-tag a:last-child {
+    margin-right: 0;
+}
+
+.blog-share-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.blog-share-icon h5 {
+    margin-right: 20px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.blog-share-icon a {
+    color: #2f3171;
+    display: inline-block;
+    transition: .3s;
+    padding: 2px 7px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #b0b1c5;
+    min-width: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.blog-share-icon a:hover {
+    color: #002bb7;
+}
+
+.blog-share-icon a:last-child {
+    margin-right: 0;
+}
+
+
+/*== End Releted Tags + share========*/
+
+
+/*=========   post-comments  ============*/
+
+
+.blog-coment-title h4 {
+    padding-left: 40px;
+}
+.latest-comments {
+    padding: 40px 40px 33px 40px;
+    margin-bottom: 40px;
+}
+.comments-avatar {
+    float: left;
+}
+
+.comments-avatar img {
+    width: 90px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.latest-comments li:first-child .comments-box {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.latest-comments li:last-child .comments-box {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.latest-comments li.child {
+    margin-left: 100px;
+}
+
+.comments-box {
+    padding: 30px 0;
+}
+
+.comments-text {
+    overflow: hidden;
+    padding-top: 4px;
+}
+
+.comments-text p {
+    margin-bottom: 20px;
+}
+
+.avatar-name {
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 600;
+}
+.avatar-date {
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.avatar-name h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.comment-reply {
+    display: inline-block;
+    margin-right: 20px;
+    color: #2f3171;
+    font-weight: 400;
+    font-size: 16px;
+}
+.comment-reply i {
+    margin-right: 15px;
+}
+.comment-like {
+    display: inline-block;
+    margin-right: 20px;
+    color: #2f3171;
+    font-weight: 400;
+    font-size: 16px;
+}
+.comment-like i {
+    margin-right: 15px;
+}
+/*end post-comments*/
+
+
+/*post-comments-form*/
+.post-comments-form {
+    padding: 40px;
+}
+
+.post-comments-title {
+    margin-bottom: 20px;
+}
+
+.comment-post-form input {
+    border: none;
+    height: 78px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #A5AABF;
+    background: transparent;
+    padding-left: 20px;
+    font-weight: 400;
+}
+.comment-post-form textarea {
+    border: none;
+    height: 125px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #A5AABF;
+    background: transparent;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+#comment-form input::-moz-placeholder {
+    color: #2f3171;
+}
+
+#comment-form input::-webkit-input-placeholder {
+    color: #2f3171;
+}
+
+#comment-form input:-ms-input-placeholder {
+    color: #2f3171;
+}
+
+#comment-form input::-ms-input-placeholder {
+    color: #2f3171;
+}
+
+#comment-form input::placeholder {
+    color: #2f3171;
+}
+
+#comment-form textarea::-moz-placeholder {
+    color: #2f3171;
+}
+
+#comment-form textarea::-webkit-input-placeholder {
+    color: #2f3171;
+}
+
+#comment-form textarea:-ms-input-placeholder {
+    color: #2f3171;
+}
+
+#comment-form textarea::-ms-input-placeholder {
+    color: #2f3171;
+}
+
+#comment-form textarea::placeholder {
+    color: #2f3171;
+}
+
+.reply-btn {
+    cursor: pointer;
+    transition: .4s;
+}
+
+/*post-comments-form*/
+
+
+/* related-post */
+.related-post {
+    margin-top: 80px;
+}
+
+/*** ========================================================================================================
+  End blog details Page
+==========================================================================================================***/
+
+
+/*** ========================================================================================================
+  Start case study Page
+==========================================================================================================***/
+
+.case-text-inner {
+    margin-bottom: 50px;
+}
+/* case-textone-wrap */
+.case-textone-content h2 {
+    font-size: 47px;
+    font-family: 'DM Serif Text', serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.case-textone-content h5 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.back-btn i {
+    background: #15ce73;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+.case-textthree-content {
+    margin-right: 30px;
+}
+.case-textfour-col {
+    margin: 0 10px;
+}
+.case-textfour-col h4 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.case-textfive-col {
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+/*** ========================================================================================================
+  End case study Page
+==========================================================================================================***/
