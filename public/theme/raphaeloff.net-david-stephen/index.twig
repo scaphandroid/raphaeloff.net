@@ -2,6 +2,48 @@
 
 {% block main %}
 
-    Test
+    {% if record is defined %}
+
+        <!-- Hero Content Start -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hero-content">
+                            <h1>{{ record.title }}</h1>
+                            {{ record.teaser }}
+                            <a href="#about_area" class="btn-bg">À propos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Content End -->
+
+        <!-- About Section Start -->
+        <section class="about-section section-padding" id="about_area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- About Left Content -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-content">
+                            {{ record.content }}
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <!-- About Right Image -->
+                    <div class="col-lg-5 col-md-12">
+
+                        <div class="about-image-wrap aos-animate" data-aos="slide-down" data-aos-duration="2500">
+                            <img src="{{ record.image|image }}" alt="{{ record.title }}">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+    {% endif %}
 
 {% endblock main %}

@@ -1,0 +1,49 @@
+body {
+    color: #606060;
+    background-color: #eeeeee30;
+}
+
+h1, h2, h3, h4, h5, h6,
+.hero-content h1,
+.hero-content h2,
+.hero-content h3,
+.hero-content h4,
+.hero-content h5,
+.hero-content h6,
+.fixed-menu .menu_area ul li a,
+.sec-title h1,
+.sec-title h2,
+.sec-title h3,
+.sec-title h4,
+.sec-title h5,
+.sec-title h6 {
+    color: #2b2a2a;
+}
+
+.for_header_background {
+    top: -20px;
+}
+
+.for_header_background img {
+    filter: grayscale(1);
+}
+
+.hero-content h1 {
+    margin-top: 50px;
+    font-size: 80px;
+}
+
+.about-image-wrap img {
+    filter: brightness(1.1);
+    border-radius: 20px;
+}
+
+[data-aos="slide-down"] {
+    transform: translate3d(0, -83%, 0);
+}
+
+@media all and (max-width: 991px) {
+    .for_header_background {
+        top: 0;
+    }
+}

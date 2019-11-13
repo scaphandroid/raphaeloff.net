@@ -30,12 +30,15 @@
     <link rel="stylesheet" href="{{ asset('css/aos.min.css', 'theme') }}">
     <link rel="stylesheet" href="{{ asset('css/slick-theme.css', 'theme') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css', 'theme') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css', 'theme') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css', 'theme') }}">
     {% block headincludes %}
     {% endblock headincludes %}
 </head>
 
 <body>
+
+{{ include('partials/_header.twig') }}
 
 {% block main %}
 
