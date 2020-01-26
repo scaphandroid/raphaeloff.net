@@ -46,13 +46,6 @@ csrf: true
 # * `public_key` key will be labeled "Site key"
 # * `private_key` key will be labeled "Secret key"
 #
-recaptcha:
-    enabled: true
-    label: "Merci de confirmer que vous êtes humain"
-    public_key: 6Ldi7dIUAAAAAGxzLFqFFIms8CnOab01MnW6sxkp
-    private_key: 6Ldi7dIUAAAAAF0j4pMWhLPbplvZDPK8IkwW3a83
-    error_message: "The CAPTCHA wasn't entered correctly. Please try again."
-    theme: clean
 
 ## File Uploads
 #
