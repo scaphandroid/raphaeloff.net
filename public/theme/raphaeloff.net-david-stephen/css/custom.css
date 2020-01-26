@@ -54,6 +54,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
     transform: translate3d(0, -83%, 0);
 }
 
+.boltforms-value input, .boltforms-value textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 80px;
+    text-align: center;
+}
+
 @media all and (max-width: 991px) {
     .for_header_background {
         top: 0;
