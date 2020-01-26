@@ -46,4 +46,36 @@
 
     {% endif %}
 
+    <!-- Blog Page Section Start -->
+    <section class="blog_page_section" id="portfolio_area">
+        <div class="container">
+            <div class="blog_header">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Projets</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="blog_content_inner">
+                <div class="row blog_list">
+                    {% setcontent projets = 'projets' %}
+                    {% for projet in projets %}
+                    <div class="col-md-4 blog_item">
+                        <div class="single_blog">
+                            <img src="{{ image(projet.image, 500, 300) }}" alt="">
+                            <div class="single_blog_content">
+                                <h4 class="blog-title"><a href="{{ projet.projectlink }}" target="_blank">{{ projet.title }}</a></h4>
+                                <div class="single-blog-bottom">
+                                    <span class="date">{{ projet.date }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Page Section End -->
+
 {% endblock main %}

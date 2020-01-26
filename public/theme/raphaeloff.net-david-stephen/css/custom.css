@@ -1,6 +1,12 @@
+:root {
+    --main-text-color: #606060;
+    --main-titles-color: #2b2a2a;
+    --main-bg-color: #eeeeee30;
+}
+
 body {
-    color: #606060;
-    background-color: #eeeeee30;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -10,14 +16,20 @@ h1, h2, h3, h4, h5, h6,
 .hero-content h4,
 .hero-content h5,
 .hero-content h6,
+.blog_header h2,
+.blog_header h3,
+.blog_header h4,
+.blog_header h5,
+.blog_header h6,
 .fixed-menu .menu_area ul li a,
 .sec-title h1,
 .sec-title h2,
 .sec-title h3,
 .sec-title h4,
 .sec-title h5,
-.sec-title h6 {
-    color: #2b2a2a;
+.sec-title h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+    color: var(--main-titles-color);
 }
 
 .for_header_background {
